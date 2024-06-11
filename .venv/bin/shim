@@ -1,0 +1,5 @@
+#!/usr/bin/env bash
+export NODE_PATH='/home/ldhpop123/projects/nodebird/.venv/lib/node_modules'
+export NPM_CONFIG_PREFIX='/home/ldhpop123/projects/nodebird/.venv'
+export npm_config_prefix='/home/ldhpop123/projects/nodebird/.venv'
+exec '.venv/bin/node' "$@"
