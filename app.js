@@ -12,7 +12,7 @@ const pageRouter = require('./routes/page'); // // 페이지 라우터 불러오
 
 // express 애플리케이션 생성
 const app = express();
-app.set('port', process.env.PORT || 8001); // 포트 설정을 환경 변수에서 가져오거나 기본값으로 8001 사용
+app.set('port', process.env.PORT || 8002); // 포트 설정을 환경 변수에서 가져오거나 기본값으로 8001 사용
 app.set('view engine', 'html'); //뷰 엔진으로 html을 설정
 // nunjucks를 설정하여 view 디렉토리를 템플릿 파일이 위치한 곳으로 지정
 nunjucks.configure('views', {

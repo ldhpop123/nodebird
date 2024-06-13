@@ -13,10 +13,10 @@ exports.renderJoin = (req, res) => {
 // 메인 페이지를 렌더링하는 함수 정의
 exports.renderMain = (req, res, next) => {
     // 화면에 표시할 트윗 목록 초기화
-    const twist = [];
-    // 'main' 템플릿 렌더링, 'title' 및 'twist' 변수 설정
+    const twits = [];
+    // 'main' 템플릿 렌더링, 'title' 및 'twits' 변수 설정
     res.render('main', {
         title: 'NodeBird', // 페이지 타이틀을 설정합니다.
-        twist, // 트윗 목록을 설정합니다.
+        twits, // 트윗 목록을 설정합니다.
     });
 };
