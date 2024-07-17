@@ -5,11 +5,13 @@ const path = require('path'); // 파일 및 디렉토리 경로를 다루기 위
 const session = require('express-session'); // 세션 관리를 위한 미들웨어
 const nunjucks = require('nunjucks'); // 템플릿 엔진: nunjucks
 const dotenv = require('dotenv'); // 환경 변수 관리
+const passport = require('passport'); // 인증을 위한 미들웨어
 
 // .env 파일에 정의된 환경 변수를 로드
 dotenv.config();
 const pageRouter = require('./routes/page'); // // 페이지 라우터 불러오기
 const { sequelize } = require('./models');
+const passportConfig = require('./passport'); // passport 설정을 가져오기
 
 // express 애플리케이션 생성
 const app = express();
